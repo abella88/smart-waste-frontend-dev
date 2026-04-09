@@ -1,10 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import AdminLogin from "./pages/AdminLogin";
 function App() {
   return (
-    <main>
-      <h1>Citizen Web App - Admin Portal</h1>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        {/* Default route → Admin Login */}
+        <Route path="/" element={<AdminLogin />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
