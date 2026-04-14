@@ -2,12 +2,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import AdminLogin from "./pages/AdminLogin";
+import AdminSignup from "./pages/AdminSignup";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Default route → Admin Login */}
         <Route path="/" element={<AdminLogin />} />
+        <Route path="/signup" element={<AdminSignup />} />
       </Routes>
     </BrowserRouter>
   );
